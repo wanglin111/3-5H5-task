@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        input,
+        button {
+            width: 400px;
+            height: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <p style="font-size: 33px;font-weight: bolder;">学生信息</p>
+    <fieldset style="width:450px;">
+        <legend style="color:red; font-size:25px;">学生档案</legend>
+        <p method="get" action="form.asp">
+            <p>姓名：</p>
+            <input type="text" name="name" required placeholder="请输入姓名"><span style="color:red">*</span>
+            <p>学号:</p>
+            <input type="number" name="number" required placeholder="请输入学号"><span style="color:red">*</span>
+            <p>手机号码:</p>
+            <input type="tel" name="tellphone" required placeholder="请输入手机号码"><span style="color:red">*</span>
+            <p>邮箱地址:</p>
+            <input type="email" name="email" required placeholder="请输入邮箱地址"><span style="color:red">*</span>
+            <p>录取学校:</p>
+            <input type="search" name="school" autocomplete="on" list="name">
+            <datalist id="name">
+            <option>河北师范大学</option>
+            <option>河北师范大学（汇华学院）</option>
+            <option>河北科技大学</option>
+            <option>河北传媒学院</option>
+        </datalist>
+            <p>入学成绩:</p>
+            <input type="number" name="score">
+            <p>入学时间:</p>
+            <input type="date" name="time">
+            <p><button type="submit" name="提交">提交</button></p>
+            </form>
+            </filedset>
+</body>
+
+</html>
